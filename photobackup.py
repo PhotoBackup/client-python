@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 """PhotoBackup
 
@@ -66,7 +66,7 @@ def test(url):
     test_url = urllib.parse.urljoin(url, '/test')
 
     try:
-        request = requests.post(test_url, data=password())
+        request = requests.get(test_url, data=password())
     except requests.exceptions.MissingSchema:
         sys.exit(term.red + "ERROR: invalid URL: {}".format(url))
     except requests.exceptions.ConnectionError:
