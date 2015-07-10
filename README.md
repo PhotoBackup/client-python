@@ -14,6 +14,7 @@ You got:
  * 408 when the request timed out ;
  * 500 when an error occured on the server in the meanwhile.
 
+See the [official API](https://github.com/PhotoBackup/api/blob/master/api.raml) for more information.
 
 ## Installation with the Makefile
 You can use the included `Makefile` to build a virtual Python environment:
