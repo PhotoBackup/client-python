@@ -107,5 +107,5 @@ def main(args):
 
 
 if __name__ == '__main__':
-    arguments = docopt(__doc__, version='PhotoBackup Python CLI client, v1.0')
+    arguments = docopt(__doc__, version='PhotoBackup Python CLI client, v0.1.0')
     main(arguments)
