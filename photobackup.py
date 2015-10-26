@@ -53,25 +53,25 @@ def make_data(filepath=None):
 
 def response(status_code):
     if status_code == 200:
-        print(term.green + "Request was successful!")
+        print(term.green("Request was successful!"))
     elif status_code == 400:
-        print(term.red + "ERROR: missing file size in request!")
+        print(term.red("ERROR: missing file size in request!"))
     elif status_code == 403:
-        print(term.red + "ERROR: wrong password!")
+        print(term.red("ERROR: wrong password!"))
     elif status_code == 404:
-        print(term.red + "ERROR: unknown address!")
+        print(term.red("ERROR: unknown address!"))
     elif status_code == 405:
-        print(term.red + "ERROR: the server does not know this url!")
+        print(term.red("ERROR: the server does not know this url!"))
     elif status_code == 408:
-        print(term.red + "ERROR: request took too long!")
+        print(term.red("ERROR: request took too long!"))
     elif status_code == 411:
-        print(term.red + "ERROR: file sizes do not match!")
+        print(term.red("ERROR: file sizes do not match!"))
     elif status_code == 413:
-        print(term.red + "ERROR: file too large, modify your server config!")
+        print(term.red("ERROR: file too large, modify your server config!"))
     elif status_code == 500:
-        print(term.red + "ERROR: server made a booboo!")
+        print(term.red("ERROR: server made a booboo!"))
     else:
-        print(term.red + "ERROR: request failed ({})!".format(status_code))
+        print(term.red("ERROR: request failed ({})!".format(status_code)))
 
 
 def upload(url, image):
@@ -79,9 +79,9 @@ def upload(url, image):
     try:
         request = requests.post(url, files=upfile, data=make_data(image))
     except requests.exceptions.MissingSchema:
-        sys.exit(term.red + "ERROR: invalid URL: {}".format(url))
+        sys.exit(term.red("ERROR: invalid URL: {}".format(url)))
     except requests.exceptions.ConnectionError:
-        sys.exit(term.red + "ERROR: Connection refused")
+        sys.exit(term.red("ERROR: Connection refused"))
 
     response(request.status_code)
 
@@ -92,9 +92,9 @@ def test(url):
     try:
         request = requests.post(test_url, data=make_data())
     except requests.exceptions.MissingSchema:
-        sys.exit(term.red + "ERROR: invalid URL: {}".format(url))
+        sys.exit(term.red("ERROR: invalid URL: {}".format(url)))
     except requests.exceptions.ConnectionError:
-        sys.exit(term.red + "ERROR: Connection refused")
+        sys.exit(term.red("ERROR: Connection refused"))
 
     response(request.status_code)
 
@@ -107,5 +107,5 @@ def main(args):
 
 
 if __name__ == '__main__':
-    arguments = docopt(__doc__, version='PhotoBackup Python CLI client, v0.1.0')
+    arguments = docopt(__doc__, version='PhotoBackup Python CLI client, v0.1.1')
     main(arguments)
