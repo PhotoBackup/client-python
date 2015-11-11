@@ -2,7 +2,11 @@
 A simple console Python 3 client for PhotoBackup. It is mostly used to test servers.
 You can use it with:
 
-    $ python photobackup.py http://myserver.com/ image.jpg
+    $ python photobackup.py upload http://myserver.com/ image.jpg
+
+or test it with:
+
+    $ python photobackup.py test http://myserver.com/
 
 A password is asked to the user, then the request is operated.
 When the request to the server is done, the response status is shown.
