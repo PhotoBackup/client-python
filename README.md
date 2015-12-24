@@ -1,4 +1,7 @@
-[![Python Version](https://img.shields.io/badge/Python-3-brightgreen.svg?style=plastic)](http://python.org) [![Build Status](https://travis-ci.org/PhotoBackup/client-python.svg?branch=master)](https://travis-ci.org/PhotoBackup/client-python) [![Code Issues](https://www.quantifiedcode.com/api/v1/project/8c46c0185dbf4d6097f2c92e08e67536/badge.svg)](https://www.quantifiedcode.com/app/project/8c46c0185dbf4d6097f2c92e08e67536)
+[![Python Version](https://img.shields.io/badge/Python-3-brightgreen.svg?style=plastic)](http://python.org)
+[![Build Status](https://travis-ci.org/PhotoBackup/client-python.svg?branch=master)](https://travis-ci.org/PhotoBackup/client-python)
+[![Code Issues](https://www.quantifiedcode.com/api/v1/project/8c46c0185dbf4d6097f2c92e08e67536/badge.svg)](https://www.quantifiedcode.com/app/project/8c46c0185dbf4d6097f2c92e08e67536)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/PhotoBackup/client-python/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 # PhotoBackup Python client
 A simple console Python 3 client for PhotoBackup. It is mostly used to test servers.
@@ -37,7 +40,3 @@ Those are:
 * [`blessings`](https://pypi.python.org/pypi/blessings/) for a bit of color ;
 * [`docopt`](http://docopt.org/) for an easy command-line interface ;
 * [`requests`](http://docs.python-requests.org/) for easy HTTP requests.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/PhotoBackup/client-python/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
