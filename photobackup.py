@@ -43,7 +43,7 @@ term = Terminal()
 
 
 def make_data(filepath=None):
-    """ Ask the password of the server. """
+    """ Asks the password of the server. """
     password = getpass.getpass(prompt='The server password: ')
     data = {'password': hashlib.sha512(password.encode('utf-8')).hexdigest()}
     if filepath:
@@ -52,6 +52,7 @@ def make_data(filepath=None):
 
 
 def response(status_code):
+    """ Prints a textual response. """
     if status_code == 200:
         print(term.green("Request was successful!"))
     elif status_code == 400:
@@ -75,6 +76,7 @@ def response(status_code):
 
 
 def upload(url, image):
+    """ Uploads the given image to the given url. """
     upfile = {'upfile': open(image, 'rb')}
     try:
         request = requests.post(url, files=upfile, data=make_data(image))
@@ -87,6 +89,7 @@ def upload(url, image):
 
 
 def test(url):
+    """ Tests the given url. """
     test_url = urllib.parse.urljoin(url, '/test')
 
     try:
@@ -100,6 +103,7 @@ def test(url):
 
 
 def main(args):
+    """ Dispatches the given command. """
     if args['upload']:
         upload(args['<url>'], args['<image>'])
     elif args['test']:
