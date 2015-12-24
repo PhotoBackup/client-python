@@ -37,3 +37,7 @@ Those are:
 * [`blessings`](https://pypi.python.org/pypi/blessings/) for a bit of color ;
 * [`docopt`](http://docopt.org/) for an easy command-line interface ;
 * [`requests`](http://docs.python-requests.org/) for easy HTTP requests.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/PhotoBackup/client-python/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
