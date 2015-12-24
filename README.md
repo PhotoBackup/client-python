@@ -1,4 +1,4 @@
-[![Python Version](https://img.shields.io/badge/Python-3-brightgreen.svg?style=plastic)](http://python.org) [![Code Issues](https://www.quantifiedcode.com/api/v1/project/8c46c0185dbf4d6097f2c92e08e67536/badge.svg)](https://www.quantifiedcode.com/app/project/8c46c0185dbf4d6097f2c92e08e67536)
+[![Python Version](https://img.shields.io/badge/Python-3-brightgreen.svg?style=plastic)](http://python.org) [![Build Status](https://travis-ci.org/PhotoBackup/client-python.svg?branch=master)](https://travis-ci.org/PhotoBackup/client-python) [![Code Issues](https://www.quantifiedcode.com/api/v1/project/8c46c0185dbf4d6097f2c92e08e67536/badge.svg)](https://www.quantifiedcode.com/app/project/8c46c0185dbf4d6097f2c92e08e67536)
 
 # PhotoBackup Python client
 A simple console Python 3 client for PhotoBackup. It is mostly used to test servers.
