@@ -8,5 +8,9 @@ python:
 # command to install dependencies
 install:
   - make
+before_install:
+  - pip install codecov
+after_success:
+  - codecov
 script:
   - nosetests
